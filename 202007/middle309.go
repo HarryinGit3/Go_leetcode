@@ -38,13 +38,6 @@ func maxProfit(prices []int) int {
 	return max(f[n-1][1], f[n-1][2])
 }
 
-func max(x, y int) int {
-	if x > y {
-		return x
-	}
-	return y
-}
-
 func main() {
 	prices := []int{1, 2, 3, 0, 2}
 	fmt.Println(maxProfit(prices))
