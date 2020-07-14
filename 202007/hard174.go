@@ -32,10 +32,3 @@ func calculateMinimumHP(dungeon [][]int) int {
 	}
 	return dp[0][0]
 }
-
-func min(x, y int) int {
-	if x < y {
-		return x
-	}
-	return y
-}
